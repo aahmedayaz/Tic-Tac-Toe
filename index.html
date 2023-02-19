@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Heading -->
+        <h1 class="main-heading">Tic Tac Toe</h1>
+
+        <!-- Upper Area -->
+        <div class="upper-area">
+            <!-- Player 1 Area -->
+            <div id="player-1-area">
+                <div id="player1">
+                    <div class="image-div">
+                        <img src="./assets/user1.png" alt="">
+                    </div>
+                    <h3 class="player-heading">Player 1</h3>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <!-- Message Area -->
+            <div id="message-area">Player 1 Turn</div>
+
+            <!-- Player 2 Area -->
+            <div id="player-2-area">
+                <div id="player2">
+                    <div class="image-div">
+                        <img src="./assets/user2.png" alt="">
+                    </div>
+                    <h3 class="player-heading">Player 2</h3>
+                    <i class="fa-regular fa-circle"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Area -->
+        <div class="game-area">
+            <div class="row">
+                <div class="box" id="0"></div>
+                <div class="box" id="1"></div>
+                <div class="box" id="2"></div>
+            </div>
+            <div class="row">
+                <div class="box" id="3"></div>
+                <div class="box" id="4"></div>
+                <div class="box" id="5"></div>
+            </div>
+            <div class="row">
+                <div class="box" id="6"></div>
+                <div class="box" id="7"></div>
+                <div class="box" id="8"></div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="./borders.js"></script>
+</body>
+</html>
