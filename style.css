@@ -83,10 +83,18 @@
 
 .upper-area i{
     font-size: 38px;
-    padding: 8px 30px;
-    color: #f9d459;
-    background-color: #f22853;
+    padding: 8px 20px;
     border-radius: 15px;
+}
+
+#player1 i{
+    color: var(--pinkish);
+    border: 1px solid var(--pinkish);
+}
+
+#player2 i{
+    color: var(--yellowish);
+    border: 1px solid var(--yellowish);
 }
 
 /* Message Area */
@@ -98,7 +106,7 @@
     background-color: var(--greenish);
     padding: 15px;
     color: aliceblue;
-    font-size: 20px;
+    font-size: 42px;
 }
 
 /* Game Area */
@@ -120,7 +128,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    width: 120px;
+    height: 120px;
     /* border: 1px solid var(--blackish); */
 }
 
@@ -128,7 +137,10 @@
 
 .game-area .row > div:hover{
     cursor: pointer;
-    background-color: #f9d459;
+}
+
+.game-area .row > div:not(.checked):hover{
+    background-color: #b8b8b8
 }
 
 /* JS Styles for Divs */
