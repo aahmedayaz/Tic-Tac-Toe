@@ -106,7 +106,7 @@
     background-color: var(--greenish);
     padding: 15px;
     color: aliceblue;
-    font-size: 42px;
+    font-size: 28px;
 }
 
 /* Game Area */
@@ -131,6 +131,11 @@
     width: 120px;
     height: 120px;
     /* border: 1px solid var(--blackish); */
+    font-size: 38px;
+}
+
+.game-area .row > .winner{
+    font-size: 68px;
 }
 
 /* Hover on Divs */
@@ -140,9 +145,12 @@
 }
 
 .game-area .row > div:not(.checked):hover{
-    background-color: #b8b8b8
+    background-color: #e9e9e9
 }
 
+.game-area .row > div i:hover{
+    cursor: pointer;
+}
 /* JS Styles for Divs */
 
 
